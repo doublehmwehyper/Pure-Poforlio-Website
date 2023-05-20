@@ -1,0 +1,711 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poor+Story&family=Poppins:ital,wght@1,300&family=Red+Hat+Display:wght@300;400;500&family=Roboto+Slab:wght@900&family=Roboto:ital,wght@0,400;1,300&family=Shalimar&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+
+.heroSection {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./image/HD\ wallpaper_\ Singers\,\ IU.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 8%;
+}
+
+.logoName {
+  color: white;
+  font-weight: 400;
+  font-size: 3rem;
+  cursor: pointer;
+  /* line-height: 80px;
+  padding-left: 100px; */
+}
+
+span {
+  color: #f60931;
+}
+
+.navList li {
+  display: inline-block;
+  /* float: right; */
+  /* padding-right: 20px; */
+  list-style: none;
+  cursor: pointer;
+}
+
+.navList li a {
+  margin: 10px;
+  color: white;
+  opacity: 0.9;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.navList li a:hover {
+  color: #f60931;
+  transition: 0.3s ease-in-out;
+}
+
+.navBtn {
+  float: right;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  background-color: #f60931;
+  padding: 1rem 2rem;
+}
+
+.navBtn:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+#check {
+  display: none;
+}
+
+.checkBtn {
+  display: none;
+}
+
+.closeBtn {
+  display: none;
+}
+
+.contentSection {
+  position: absolute;
+  left: 8%;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.name {
+  color: white;
+  font-size: 75px;
+  margin-bottom: 0.5rem;
+  font-family: 'Shantell Sans', cursive;
+}
+
+.contentSection h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  opacity: 0.8;
+  /* font-family: 'Shantell Sans', cursive; */
+}
+
+h5 {
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+
+  /* font-family: 'Shantell Sans', cursive; */
+}
+
+.contentInp form {
+  position: relative;
+  width: 380px;
+  height: 50px;
+}
+
+.contentInp form input:first-child {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f60931;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 15px;
+}
+
+.contentInp form input:last-child {
+  border: 1px solid black;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: #f60931;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+}
+
+/* About Section */
+
+.aboutSection {
+  background-color: #191919;
+  padding: 100px 0px;
+}
+
+.mainDiv {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.aboutSection img {
+  width: 400px;
+  height: 450px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.aboutContent {
+  width: 550px;
+}
+
+.aboutContent h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+
+.aboutContent h5 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+
+.aboutContent p {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: 2rem;
+  opacity: 0.7;
+}
+
+.aboutContent button {
+  background-color: #f60931;
+  color: white;
+  padding: 15px 30px;
+  border: 2px solid transparent;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+.aboutContent button:hover {
+  background-color: transparent;
+  border: 2px solid #f60931;
+  cursor: pointer;
+}
+
+/* Services Section */
+.servicesSection {
+  background-color: #101010;
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.title h1 {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.mainCard {
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.card {
+  height: auto;
+  width: 335px;
+  padding: 15px 25px;
+  background-color: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card i {
+  color: #f60931;
+  font-size: 40px;
+  display: block;
+  text-align: center;
+  margin: 2rem 0px;
+}
+
+.card h2 {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 25px 0px;
+  opacity: 0.8;
+}
+
+.card p {
+  font-size: 18px;
+  color: white;
+  margin: 15px 0px;
+  letter-spacing: 1px;
+  line-height: 1.8rem;
+  opacity: 0.7;
+}
+
+.readBtn {
+  background-color: #f60931;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.readBtn:hover {
+  background-color: transparent;
+  border: 2px solid #f60931;
+  cursor: pointer;
+}
+
+/* Contact Section */
+.contactSection {
+  height: 290px;
+  width: 100%;
+  padding: 100px 0px;
+  text-align: center;
+  background-color: #191919;
+}
+
+.contactText {
+  color: white;
+  font-size: 28px;
+  opacity: 0.8;
+}
+
+.hireBtn {
+  background-color: #f60931;
+  color: white;
+  padding: 12px 35px;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  font-size: 18px;
+}
+
+.hireBtn:hover {
+  background-color: transparent;
+  border: 2px solid #f60931;
+  cursor: pointer;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #101010;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.footer h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 800;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.footer p {
+  color: white;
+  opacity: 0.5;
+  font-size: 20px;
+  font-weight: 400;
+  width: 500px;
+  margin: auto;
+  line-height: 1.8rem;
+  /* text-align: center; */
+}
+
+.footerImg i {
+  margin: 2rem 0.8rem;
+  font-size: 30px;
+  color: white;
+  background-color: #f60931;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.footerImg i:hover {
+  background-color: transparent;
+  border: 2px solid #f60931;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* Responsive Section */
+
+/* (max-width: 1046px) */
+@media (max-width: 1046px) {
+
+  /* Hero Section  */
+  .skills {
+    display: none;
+  }
+
+  .logoName {
+    font-weight: 400;
+    font-size: 2.3rem;
+  }
+
+  .navList li a {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0 0.5rem;
+  }
+
+  /* About Section */
+  .aboutSection img {
+    margin-right: 2rem;
+    height: auto;
+    width: 380px;
+  }
+
+  .aboutContent {
+    width: 400px;
+    height: auto;
+  }
+
+  .aboutContent p {
+    font-size: 18px;
+    width: fit-content;
+  }
+
+  /* Services Section*/
+  .title h1 {
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+  .card i {
+    font-size: 30px;
+  }
+
+  .card h2 {
+    font-size: 30px;
+  }
+
+  .card p {
+    font-size: 18px;
+  }
+
+  .readBtn {
+    margin-top: 0.2rem;
+  }
+
+  /* Contact Section */
+  .contactText {
+    font-size: 25px;
+  }
+}
+
+/* (max-width:860px) */
+
+@media (max-width:860px) {
+
+  .logoName {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+
+  .navList {
+    width: 50%;
+    height: 100vh;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 100;
+    transition: all 0.5s;
+  }
+
+  .navList li a {
+    display: block;
+    color: white;
+    background-color: #f60931;
+    padding: 15px 10px;
+    /* width: 35%; */
+    /* margin-left: 125px; */
+    /* border: 1px solid #f60931; */
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .navList li a:hover {
+    /* background-color: transparent; */
+    transform: scale(1.1);
+    color: white;
+    transition: all 0.5s;
+  }
+
+  .checkBtn {
+    display: block;
+    color: white;
+    padding: 6px 16px;
+  }
+
+  #check:checked~.navList {
+    left: 0;
+    transition: all 0.5s;
+  }
+
+  .navBtn {
+    display: none;
+    margin-right: 2.5rem;
+  }
+
+  .navBtn:hover {
+    transform: scale(1.07);
+    transition: transform 0.5s;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .contentSection h5 {
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 1;
+    margin-top: 2rem;
+  }
+
+  .contentInp form {
+    width: 350px;
+    height: 50px;
+  }
+
+  /* About Section */
+  .mainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutSection img {
+    width: 400px;
+    height: 450px;
+  }
+
+  .aboutContent {
+    width: 400px;
+  }
+
+  .aboutContent h1 {
+    /* font-size: 50px;
+    font-weight: 500; */
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .aboutContent h5 {
+    /* font-size: 22px;
+    font-weight: 500; */
+    text-align: center;
+  }
+
+  .aboutContent p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .aboutContent button {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+
+  /* Services Section */
+
+  .title {
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  .mainCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+  }
+
+  /* Contact Me Section */
+  .contactText {
+    font-size: 20px;
+    line-height: 3rem;
+  }
+
+  /* Footer Section */
+  .footer h1 {
+    font-size: 45px;
+  }
+
+  .footer p {
+    /* width: 400px; */
+    font-size: 20px;
+  }
+}
+
+/* Hero Section (max-width:640px) */
+@media (max-width:640px) {
+
+  .checkBtn {
+    font-size: 14px;
+  }
+
+  .contentSection h2 {
+    font-size: 24px;
+    opacity: 0.9;
+  }
+
+  .contentSection h1 {
+    font-size: 60px;
+  }
+
+  .contentSection h5 {
+    font-size: 19px;
+    margin-top: 20px;
+    line-height: 20px;
+  }
+
+  /* About Section */
+  .mainDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutSection img {
+    width: 290px;
+    height: 290px;
+    margin: auto;
+  }
+
+  .aboutContent h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .aboutContent h5 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .aboutContent p {
+    width: 250px;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .aboutContent button {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+
+  /* Services Section */
+  .servicesSection h1 {
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  .card {
+    height: 350;
+    width: 320px;
+    margin: 15px;
+  }
+
+  .mainCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+  }
+
+  /* Footer Section */
+  footer em {
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .footer p {
+    font-size: 18px;
+    width: fit-content;
+    margin: 1rem;
+  }
+}
+
+@media (max-width:425px) {
+  .logoName {
+    font-size: 30px;
+  }
+
+  .checkBtn {
+    font-size: 12px;
+  }
+
+  em {
+    font-size: 21px;
+  }
+
+  .contentSection h1 {
+    font-size: 45px;
+  }
+
+  .contentSection h5 {
+    font-size: 16px;
+  }
+
+  .contentInp {
+    display: none;
+  }
+}
