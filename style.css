@@ -375,6 +375,30 @@ h5 {
   transition: 0.4s;
 }
 
+.gitHubLink {
+  text-decoration: none;
+  background-color: #f60931;
+  color: white;
+  padding: 15px 20px;
+  border: 2px solid transparent;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.linking {
+  padding: 30px 0 60px 0;
+  text-align: center;
+  background-color: #101010;
+}
+
+.gitHubLink:hover {
+  background-color: transparent;
+  border: 2px solid #f60931;
+  cursor: pointer;
+}
+
 /* Responsive Section */
 
 /* (max-width: 1046px) */
